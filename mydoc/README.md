@@ -8,7 +8,7 @@ scons build/NULL/gem5.opt PROTOCAL=Garnet_standalone -j 41
 
 ### Run Custom Network
 ```shell
-./build/NULL/gem5.opt  configs/my/test.py --network=garnet --topology=Mesh_XY --mesh-rows=4 --num-cpus=16 --num-dirs=16 --num-l2caches=16 --sim-cycles=1000 --injectionrate=0.1 --synthetic=uniform_random
+./build/NULL/gem5.opt configs/my/test.py --num-cpus=4 --num-dirs=4 --network=garnet --topology=Mesh_XY --mesh-rows=2 --sim-cycles=10000 --synthetic=uniform_random --injectionrate=0.05 --vcs-per-vnet=4 --mem-size 32768MB
 ```
 
 ### Output file
